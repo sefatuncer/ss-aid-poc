@@ -1,0 +1,13 @@
+{
+  "did_web_document": 449,
+  "did_key_document": 367,
+  "capability_vc_body": 436,
+  "capability_vc_wire": 635,
+  "ed25519_signature": 64,
+  "delegation_vc_per_hop": 698,
+  "chain_5hop_total": 3400,
+  "dct_payload": 126,
+  "dct_wire": 235,
+  "oauth_token_response": 117,
+  "oauth_bearer_header": 54
+}

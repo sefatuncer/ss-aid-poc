@@ -1,0 +1,26 @@
+# SS-AID proof-of-concept dependencies
+#
+# blspy is pinned because the article names the version that produced the
+# Tier-1 figures. The rest carry lower bounds so the package installs on
+# current interpreters.
+
+PyNaCl>=1.5.0
+py_ecc>=7.0.0
+blspy==2.0.3
+cryptography>=3.4
+matplotlib>=3.8
+numpy>=1.24
+scipy>=1.10
+
+# Verified environments
+#
+# Original run, figures reported in the article:
+#   Intel Xeon E5-2680 v4, Linux, Python 3.x, blspy 2.0.3
+#
+# Re-run on 21 August 2026, recorded under results/rerun-2026-08-21-laptop:
+#   Windows 11, Python 3.11.9, PyNaCl 1.6.2, py_ecc 8.0.0, blspy 2.0.3,
+#   cryptography 48.0.0, matplotlib 3.10.9, numpy 2.4.4, scipy 1.17.1
+#
+# On that re-run every seeded attack rate reproduced exactly. Latency figures
+# differ because they depend on the machine; see the reproducibility notes in
+# README.md.

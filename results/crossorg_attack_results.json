@@ -1,0 +1,185 @@
+{
+  "spoofing": {
+    "noauth_intra": {
+      "successes": 1000,
+      "iterations": 1000,
+      "rate_pct": 100.0,
+      "ci_95_low_pct": 99.6,
+      "ci_95_high_pct": 100.0
+    },
+    "noauth_cross": {
+      "successes": 1000,
+      "iterations": 1000,
+      "rate_pct": 100.0,
+      "ci_95_low_pct": 99.6,
+      "ci_95_high_pct": 100.0
+    },
+    "apikey_intra": {
+      "successes": 345,
+      "iterations": 1000,
+      "rate_pct": 34.5,
+      "ci_95_low_pct": 31.6,
+      "ci_95_high_pct": 37.5
+    },
+    "apikey_cross": {
+      "successes": 431,
+      "iterations": 1000,
+      "rate_pct": 43.1,
+      "ci_95_low_pct": 40.1,
+      "ci_95_high_pct": 46.2
+    },
+    "oauth_intra": {
+      "successes": 0,
+      "iterations": 1000,
+      "rate_pct": 0.0,
+      "ci_95_low_pct": 0.0,
+      "ci_95_high_pct": 0.4
+    },
+    "oauth_cross": {
+      "successes": 105,
+      "iterations": 1000,
+      "rate_pct": 10.5,
+      "ci_95_low_pct": 8.7,
+      "ci_95_high_pct": 12.6
+    },
+    "ssaid_intra": {
+      "successes": 0,
+      "iterations": 1000,
+      "rate_pct": 0.0,
+      "ci_95_low_pct": 0.0,
+      "ci_95_high_pct": 0.4
+    },
+    "ssaid_cross": {
+      "successes": 0,
+      "iterations": 1000,
+      "rate_pct": 0.0,
+      "ci_95_low_pct": 0.0,
+      "ci_95_high_pct": 0.4
+    }
+  },
+  "delegation": {
+    "oauth_intra": {
+      "successes": 0,
+      "iterations": 1000,
+      "rate_pct": 0.0,
+      "ci_95_low_pct": 0.0,
+      "ci_95_high_pct": 0.4
+    },
+    "oauth_cross": {
+      "successes": 64,
+      "iterations": 1000,
+      "rate_pct": 6.4,
+      "ci_95_low_pct": 5.0,
+      "ci_95_high_pct": 8.1
+    },
+    "ssaid_intra": {
+      "successes": 0,
+      "iterations": 1000,
+      "rate_pct": 0.0,
+      "ci_95_low_pct": 0.0,
+      "ci_95_high_pct": 0.4
+    },
+    "ssaid_cross": {
+      "successes": 0,
+      "iterations": 1000,
+      "rate_pct": 0.0,
+      "ci_95_low_pct": 0.0,
+      "ci_95_high_pct": 0.4
+    }
+  },
+  "revoked": {
+    "oauth_intra": {
+      "successes": 32,
+      "iterations": 1000,
+      "rate_pct": 3.2,
+      "ci_95_low_pct": 2.3,
+      "ci_95_high_pct": 4.5
+    },
+    "oauth_cross": {
+      "successes": 17,
+      "iterations": 1000,
+      "rate_pct": 1.7,
+      "ci_95_low_pct": 1.1,
+      "ci_95_high_pct": 2.7
+    },
+    "ssaid_intra": {
+      "successes": 45,
+      "iterations": 1000,
+      "rate_pct": 4.5,
+      "ci_95_low_pct": 3.4,
+      "ci_95_high_pct": 6.0
+    },
+    "ssaid_cross": {
+      "successes": 58,
+      "iterations": 1000,
+      "rate_pct": 5.8,
+      "ci_95_low_pct": 4.5,
+      "ci_95_high_pct": 7.4
+    }
+  },
+  "delegation_depth": {
+    "1": {
+      "integrity_rate": 1.0,
+      "ci_95_low": 0.9812,
+      "ci_95_high": 1.0,
+      "median_verify_ms": 0.053,
+      "p95_verify_ms": 0.058,
+      "trials": 200
+    },
+    "2": {
+      "integrity_rate": 1.0,
+      "ci_95_low": 0.9812,
+      "ci_95_high": 1.0,
+      "median_verify_ms": 0.03,
+      "p95_verify_ms": 0.058,
+      "trials": 200
+    },
+    "3": {
+      "integrity_rate": 1.0,
+      "ci_95_low": 0.9812,
+      "ci_95_high": 1.0,
+      "median_verify_ms": 0.029,
+      "p95_verify_ms": 0.066,
+      "trials": 200
+    },
+    "4": {
+      "integrity_rate": 1.0,
+      "ci_95_low": 0.9812,
+      "ci_95_high": 1.0,
+      "median_verify_ms": 0.029,
+      "p95_verify_ms": 0.058,
+      "trials": 200
+    },
+    "5": {
+      "integrity_rate": 1.0,
+      "ci_95_low": 0.9812,
+      "ci_95_high": 1.0,
+      "median_verify_ms": 0.028,
+      "p95_verify_ms": 0.057,
+      "trials": 200
+    },
+    "6": {
+      "integrity_rate": 1.0,
+      "ci_95_low": 0.9812,
+      "ci_95_high": 1.0,
+      "median_verify_ms": 0.028,
+      "p95_verify_ms": 0.057,
+      "trials": 200
+    },
+    "8": {
+      "integrity_rate": 1.0,
+      "ci_95_low": 0.9812,
+      "ci_95_high": 1.0,
+      "median_verify_ms": 0.028,
+      "p95_verify_ms": 0.057,
+      "trials": 200
+    }
+  },
+  "metadata": {
+    "iterations": 1000,
+    "warmup": 100,
+    "seed": 42,
+    "ci_method": "Wilson score interval (95%)",
+    "timestamp": "2026-08-21T07:50:31Z"
+  }
+}

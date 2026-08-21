@@ -1,0 +1,30 @@
+{
+  "scales": {
+    "0.5": {
+      "oauth_spoof_cross_pct": 5.0,
+      "oauth_delegation_cross_pct": 3.1,
+      "ssaid_spoof_cross_pct": 0.0
+    },
+    "0.75": {
+      "oauth_spoof_cross_pct": 7.5,
+      "oauth_delegation_cross_pct": 5.1,
+      "ssaid_spoof_cross_pct": 0.0
+    },
+    "1.0": {
+      "oauth_spoof_cross_pct": 9.8,
+      "oauth_delegation_cross_pct": 7.3,
+      "ssaid_spoof_cross_pct": 0.0
+    },
+    "1.25": {
+      "oauth_spoof_cross_pct": 13.5,
+      "oauth_delegation_cross_pct": 10.1,
+      "ssaid_spoof_cross_pct": 0.0
+    },
+    "1.5": {
+      "oauth_spoof_cross_pct": 16.8,
+      "oauth_delegation_cross_pct": 11.4,
+      "ssaid_spoof_cross_pct": 0.0
+    }
+  },
+  "note": "Baseline rates are stipulated model inputs. SS-AID outcomes are produced by real cryptographic verification and do not depend on these rates."
+}

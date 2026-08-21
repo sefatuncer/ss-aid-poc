@@ -1,0 +1,170 @@
+{
+  "system_info": {
+    "python_version": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "machine": "AMD64",
+    "pynacl_version": "1.6.2",
+    "cryptography_version": "48.0.0",
+    "timestamp": "2026-08-21T07:42:12Z"
+  },
+  "performance": {
+    "api_key": {
+      "key_verify": {
+        "median_ms": 0.0,
+        "mean_ms": 0.0,
+        "p95_ms": 0.001,
+        "p99_ms": 0.001,
+        "stddev_ms": 0.001,
+        "min_ms": 0.0,
+        "max_ms": 0.03,
+        "iterations": 1000
+      },
+      "total_auth_cycle": {
+        "median_ms": 0.0,
+        "mean_ms": 0.0,
+        "p95_ms": 0.001,
+        "p99_ms": 0.001,
+        "stddev_ms": 0.001,
+        "min_ms": 0.0,
+        "max_ms": 0.03,
+        "iterations": 1000
+      }
+    },
+    "oauth": {
+      "token_issue": {
+        "median_ms": 0.005,
+        "mean_ms": 0.005,
+        "p95_ms": 0.006,
+        "p99_ms": 0.013,
+        "stddev_ms": 0.002,
+        "min_ms": 0.004,
+        "max_ms": 0.044,
+        "iterations": 1000
+      },
+      "token_verify": {
+        "median_ms": 0.003,
+        "mean_ms": 0.003,
+        "p95_ms": 0.004,
+        "p99_ms": 0.004,
+        "stddev_ms": 0.0,
+        "min_ms": 0.003,
+        "max_ms": 0.012,
+        "iterations": 1000
+      },
+      "scope_check": {
+        "median_ms": 0.0,
+        "mean_ms": 0.0,
+        "p95_ms": 0.0,
+        "p99_ms": 0.0,
+        "stddev_ms": 0.0,
+        "min_ms": 0.0,
+        "max_ms": 0.001,
+        "iterations": 1000
+      },
+      "revocation_check": {
+        "median_ms": 0.0,
+        "mean_ms": 0.0,
+        "p95_ms": 0.0,
+        "p99_ms": 0.0,
+        "stddev_ms": 0.0,
+        "min_ms": 0.0,
+        "max_ms": 0.001,
+        "iterations": 1000
+      },
+      "total_auth_cycle": {
+        "median_ms": 0.003
+      }
+    },
+    "ssaid": {
+      "credential_issue": {
+        "median_ms": 0.025,
+        "mean_ms": 0.025,
+        "p95_ms": 0.028,
+        "p99_ms": 0.03,
+        "stddev_ms": 0.001,
+        "min_ms": 0.024,
+        "max_ms": 0.041,
+        "iterations": 1000
+      },
+      "credential_verify": {
+        "median_ms": 0.053,
+        "mean_ms": 0.06,
+        "p95_ms": 0.071,
+        "p99_ms": 0.084,
+        "stddev_ms": 0.012,
+        "min_ms": 0.051,
+        "max_ms": 0.225,
+        "iterations": 1000
+      },
+      "signature_verify": {
+        "median_ms": 0.047,
+        "mean_ms": 0.048,
+        "p95_ms": 0.053,
+        "p99_ms": 0.075,
+        "stddev_ms": 0.004,
+        "min_ms": 0.046,
+        "max_ms": 0.12,
+        "iterations": 1000
+      },
+      "pep_scope_check": {
+        "median_ms": 0.001,
+        "mean_ms": 0.003,
+        "p95_ms": 0.001,
+        "p99_ms": 0.002,
+        "stddev_ms": 0.043,
+        "min_ms": 0.001,
+        "max_ms": 1.363,
+        "iterations": 1000
+      },
+      "dct_generation": {
+        "median_ms": 0.023,
+        "mean_ms": 0.024,
+        "p95_ms": 0.029,
+        "p99_ms": 0.071,
+        "stddev_ms": 0.008,
+        "min_ms": 0.021,
+        "max_ms": 0.114,
+        "iterations": 1000
+      },
+      "revocation_check": {
+        "median_ms": 0.032,
+        "mean_ms": 0.033,
+        "p95_ms": 0.038,
+        "p99_ms": 0.048,
+        "stddev_ms": 0.005,
+        "min_ms": 0.031,
+        "max_ms": 0.129,
+        "iterations": 1000
+      },
+      "total_auth_cycle": {
+        "median_ms": 0.109
+      }
+    },
+    "overhead_vs_oauth": 36.3
+  },
+  "attacks": {
+    "spoofing_noauth": 100.0,
+    "spoofing_apikey": 0.0,
+    "spoofing_oauth": 33.4,
+    "spoofing_ssaid": 0.0,
+    "delegation_oauth": 0.0,
+    "delegation_ssaid": 0.0,
+    "revoked_oauth": 0.0,
+    "revoked_ssaid": 100.0,
+    "delegation_depth": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true,
+      "8": true
+    },
+    "metadata": {
+      "iterations": 1000,
+      "timestamp": "2026-08-21T07:42:12Z"
+    }
+  },
+  "iterations": 1000
+}

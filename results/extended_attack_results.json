@@ -1,0 +1,320 @@
+{
+  "t3_replay_oauth": {
+    "immediate_replay": {
+      "successes": 0,
+      "rate_pct": 0.0,
+      "note": "Bearer tokens are replayable within TTL window"
+    },
+    "delayed_replay": {
+      "successes": 0,
+      "rate_pct": 0.0,
+      "note": "30% of attempts within TTL window"
+    }
+  },
+  "t3_replay_ssaid": {
+    "replay_successes": 0,
+    "rate_pct": 0.0,
+    "ci_95": [
+      0.0,
+      0.4
+    ],
+    "mechanism": "Nonce-based replay prevention (used_nonces set)"
+  },
+  "t4_unauthorized": {
+    "out_of_scope_action": {
+      "successes": 0,
+      "iterations": 1000,
+      "rate_pct": 0.0,
+      "ci_95": [
+        0.0,
+        0.4
+      ]
+    },
+    "over_limit_amount": {
+      "successes": 0,
+      "iterations": 1000,
+      "rate_pct": 0.0,
+      "ci_95": [
+        0.0,
+        0.4
+      ]
+    },
+    "combined_attack": {
+      "successes": 0,
+      "iterations": 1000,
+      "rate_pct": 0.0,
+      "ci_95": [
+        0.0,
+        0.4
+      ]
+    }
+  },
+  "delegation_depth_compromise": {
+    "1": {
+      "empirical_integrity": 0.982,
+      "theoretical_integrity": 0.99,
+      "deviation": 0.008,
+      "compromised_chains": 9,
+      "ci_95": [
+        0.9661,
+        0.9905
+      ],
+      "median_verify_ms": 0.115,
+      "trials": 500
+    },
+    "2": {
+      "empirical_integrity": 0.986,
+      "theoretical_integrity": 0.9801,
+      "deviation": 0.0059,
+      "compromised_chains": 7,
+      "ci_95": [
+        0.9714,
+        0.9932
+      ],
+      "median_verify_ms": 0.116,
+      "trials": 500
+    },
+    "3": {
+      "empirical_integrity": 0.964,
+      "theoretical_integrity": 0.9703,
+      "deviation": 0.0063,
+      "compromised_chains": 18,
+      "ci_95": [
+        0.9438,
+        0.9771
+      ],
+      "median_verify_ms": 0.128,
+      "trials": 500
+    },
+    "4": {
+      "empirical_integrity": 0.958,
+      "theoretical_integrity": 0.9606,
+      "deviation": 0.0026,
+      "compromised_chains": 21,
+      "ci_95": [
+        0.9366,
+        0.9724
+      ],
+      "median_verify_ms": 0.12,
+      "trials": 500
+    },
+    "5": {
+      "empirical_integrity": 0.954,
+      "theoretical_integrity": 0.951,
+      "deviation": 0.003,
+      "compromised_chains": 23,
+      "ci_95": [
+        0.9319,
+        0.9692
+      ],
+      "median_verify_ms": 0.131,
+      "trials": 500
+    },
+    "6": {
+      "empirical_integrity": 0.944,
+      "theoretical_integrity": 0.9415,
+      "deviation": 0.0025,
+      "compromised_chains": 28,
+      "ci_95": [
+        0.9203,
+        0.961
+      ],
+      "median_verify_ms": 0.12,
+      "trials": 500
+    },
+    "7": {
+      "empirical_integrity": 0.938,
+      "theoretical_integrity": 0.9321,
+      "deviation": 0.0059,
+      "compromised_chains": 31,
+      "ci_95": [
+        0.9133,
+        0.956
+      ],
+      "median_verify_ms": 0.123,
+      "trials": 500
+    },
+    "8": {
+      "empirical_integrity": 0.932,
+      "theoretical_integrity": 0.9227,
+      "deviation": 0.0093,
+      "compromised_chains": 34,
+      "ci_95": [
+        0.9065,
+        0.9509
+      ],
+      "median_verify_ms": 0.126,
+      "trials": 500
+    },
+    "10": {
+      "empirical_integrity": 0.872,
+      "theoretical_integrity": 0.9044,
+      "deviation": 0.0324,
+      "compromised_chains": 64,
+      "ci_95": [
+        0.8399,
+        0.8985
+      ],
+      "median_verify_ms": 0.127,
+      "trials": 500
+    }
+  },
+  "revocation_sensitivity": {
+    "0.1": {
+      "success_rate_pct": 49.6,
+      "ci_95": [
+        45.2,
+        54.0
+      ],
+      "delay_ms": 0.1
+    },
+    "0.5": {
+      "success_rate_pct": 46.4,
+      "ci_95": [
+        42.1,
+        50.8
+      ],
+      "delay_ms": 0.5
+    },
+    "1.0": {
+      "success_rate_pct": 50.8,
+      "ci_95": [
+        46.4,
+        55.2
+      ],
+      "delay_ms": 1.0
+    },
+    "5.0": {
+      "success_rate_pct": 47.0,
+      "ci_95": [
+        42.7,
+        51.4
+      ],
+      "delay_ms": 5.0
+    },
+    "10.0": {
+      "success_rate_pct": 50.4,
+      "ci_95": [
+        46.0,
+        54.8
+      ],
+      "delay_ms": 10.0
+    },
+    "50.0": {
+      "success_rate_pct": 50.0,
+      "ci_95": [
+        45.6,
+        54.4
+      ],
+      "delay_ms": 50.0
+    },
+    "100.0": {
+      "success_rate_pct": 50.4,
+      "ci_95": [
+        46.0,
+        54.8
+      ],
+      "delay_ms": 100.0
+    },
+    "500.0": {
+      "success_rate_pct": 47.4,
+      "ci_95": [
+        43.1,
+        51.8
+      ],
+      "delay_ms": 500.0
+    },
+    "1000.0": {
+      "success_rate_pct": 52.8,
+      "ci_95": [
+        48.4,
+        57.1
+      ],
+      "delay_ms": 1000.0
+    }
+  },
+  "statistical_tests": {
+    "spoofing_crossorg_oauth_vs_ssaid": {
+      "test": "Chi-squared",
+      "chi2": 108.717,
+      "p_value": 0.0,
+      "significant": "True",
+      "interpretation": "OAuth spoofing rate significantly higher than SS-AID"
+    },
+    "delegation_crossorg_oauth_vs_ssaid": {
+      "test": "Chi-squared",
+      "chi2": 64.066,
+      "p_value": 0.0,
+      "significant": "True"
+    },
+    "oauth_spoofing_intra_vs_cross": {
+      "test": "Chi-squared",
+      "chi2": 108.717,
+      "p_value": 0.0,
+      "significant": "True",
+      "interpretation": "Cross-org deployment significantly increases OAuth spoofing risk"
+    },
+    "spoofing_effect_size": {
+      "test": "Cohen's h",
+      "value": 0.66,
+      "interpretation": "medium"
+    },
+    "latency_overhead": {
+      "ssaid_median_ms": 0.319,
+      "oauth_median_ms": 0.014,
+      "overhead_ratio": 22.8,
+      "note": "Raw distributions needed for Welch's t-test; medians reported here"
+    }
+  },
+  "network_latency": {
+    "lan_same_datacenter": {
+      "oauth_total_ms": 1.0,
+      "ssaid_total_ms": 2.3,
+      "overhead_ratio": 2.29,
+      "advantage": "OAuth",
+      "network_costs": {
+        "did_resolve_ms": 2.0,
+        "didcomm_transport_ms": 1.0,
+        "oauth_server_rtt_ms": 1.0
+      }
+    },
+    "wan_same_region": {
+      "oauth_total_ms": 5.0,
+      "ssaid_total_ms": 20.3,
+      "overhead_ratio": 4.05,
+      "advantage": "OAuth",
+      "network_costs": {
+        "did_resolve_ms": 20.0,
+        "didcomm_transport_ms": 10.0,
+        "oauth_server_rtt_ms": 5.0
+      }
+    },
+    "wan_cross_region": {
+      "oauth_total_ms": 30.0,
+      "ssaid_total_ms": 100.3,
+      "overhead_ratio": 3.34,
+      "advantage": "OAuth",
+      "network_costs": {
+        "did_resolve_ms": 100.0,
+        "didcomm_transport_ms": 50.0,
+        "oauth_server_rtt_ms": 30.0
+      }
+    },
+    "global_cross_org": {
+      "oauth_total_ms": 50.0,
+      "ssaid_total_ms": 200.3,
+      "overhead_ratio": 4.01,
+      "advantage": "OAuth",
+      "network_costs": {
+        "did_resolve_ms": 200.0,
+        "didcomm_transport_ms": 100.0,
+        "oauth_server_rtt_ms": 50.0
+      }
+    }
+  },
+  "metadata": {
+    "iterations": 1000,
+    "seed": 42,
+    "timestamp": "2026-04-12T09:03:52Z"
+  }
+}

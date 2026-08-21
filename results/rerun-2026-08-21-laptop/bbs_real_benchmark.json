@@ -1,0 +1,97 @@
+{
+  "bls12_381": {
+    "keygen": {
+      "median_ms": 0.022,
+      "mean_ms": 0.022,
+      "p95_ms": 0.023,
+      "p99_ms": 0.026,
+      "stddev_ms": 0.001,
+      "min_ms": 0.02,
+      "max_ms": 0.035,
+      "iterations": 1000
+    },
+    "sign_single": {
+      "median_ms": 0.292,
+      "mean_ms": 0.307,
+      "p95_ms": 0.336,
+      "p99_ms": 0.875,
+      "stddev_ms": 0.077,
+      "min_ms": 0.274,
+      "max_ms": 1.008,
+      "iterations": 1000
+    },
+    "verify_single": {
+      "median_ms": 0.86,
+      "mean_ms": 1.095,
+      "p95_ms": 1.935,
+      "p99_ms": 2.66,
+      "stddev_ms": 0.418,
+      "min_ms": 0.803,
+      "max_ms": 3.202,
+      "iterations": 1000
+    },
+    "aggregate_sign": {
+      "median_ms": 1.182,
+      "mean_ms": 1.371,
+      "p95_ms": 2.087,
+      "p99_ms": 3.33,
+      "stddev_ms": 0.408,
+      "min_ms": 1.119,
+      "max_ms": 4.424,
+      "iterations": 1000
+    },
+    "aggregate_verify": {
+      "median_ms": 1.621,
+      "mean_ms": 1.839,
+      "p95_ms": 2.783,
+      "p99_ms": 4.591,
+      "stddev_ms": 0.551,
+      "min_ms": 1.554,
+      "max_ms": 6.223,
+      "iterations": 1000
+    },
+    "selective_disclosure_verify": {
+      "median_ms": 1.059,
+      "mean_ms": 1.185,
+      "p95_ms": 1.642,
+      "p99_ms": 3.152,
+      "stddev_ms": 0.356,
+      "min_ms": 0.999,
+      "max_ms": 4.189,
+      "iterations": 1000
+    }
+  },
+  "ed25519": {
+    "sign": {
+      "median_ms": 0.017,
+      "mean_ms": 0.018,
+      "p95_ms": 0.019,
+      "p99_ms": 0.031,
+      "stddev_ms": 0.01,
+      "min_ms": 0.015,
+      "max_ms": 0.32,
+      "iterations": 1000
+    },
+    "verify": {
+      "median_ms": 0.049,
+      "mean_ms": 0.055,
+      "p95_ms": 0.078,
+      "p99_ms": 0.135,
+      "stddev_ms": 0.017,
+      "min_ms": 0.045,
+      "max_ms": 0.248,
+      "iterations": 1000
+    }
+  },
+  "comparison": {
+    "sign_overhead": 17.2,
+    "verify_overhead": 17.6
+  },
+  "metadata": {
+    "library": "blspy 2.0.3 (Chia BLS12-381 C implementation)",
+    "iterations": 1000,
+    "warmup": 100,
+    "note": "Real BLS12-381 operations, not estimates. blspy uses optimized C/ASM pairings.",
+    "timestamp": "2026-08-21T07:48:26Z"
+  }
+}

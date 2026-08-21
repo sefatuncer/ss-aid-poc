@@ -1,0 +1,73 @@
+{
+  "e2e_derivation": {
+    "scenario_a": {
+      "base_s": 4.2,
+      "interactions": 6,
+      "oauth_overhead_ms": 0.2,
+      "ssaid_overhead_ms": 24.5,
+      "oauth_total_s": 4.2,
+      "ssaid_total_s": 4.2
+    },
+    "scenario_b": {
+      "base_s": 6.1,
+      "interactions": 8,
+      "oauth_overhead_ms": 0.3,
+      "ssaid_overhead_ms": 32.7,
+      "oauth_total_s": 6.1,
+      "ssaid_total_s": 6.1
+    }
+  },
+  "power_analysis": {
+    "cohen_h": 0.597,
+    "n_required": 22,
+    "n_actual": 1000,
+    "power_estimate": ">0.99"
+  },
+  "bonferroni": {
+    "alpha": 0.05,
+    "n_tests": 6,
+    "corrected_alpha": 0.008333333333333333,
+    "results": [
+      {
+        "test": "Spoofing cross OAuth vs SS-AID",
+        "method": "Fisher",
+        "p": 2.7622184046258307e-33,
+        "sig": "True"
+      },
+      {
+        "test": "Delegation cross OAuth vs SS-AID",
+        "method": "Fisher",
+        "p": 3.827414353562542e-20,
+        "sig": "True"
+      },
+      {
+        "test": "Revoked intra OAuth vs SS-AID",
+        "method": "chi2",
+        "chi2": 1.9450128654496828,
+        "p": 0.1631252771552513,
+        "sig": "False"
+      },
+      {
+        "test": "Revoked cross OAuth vs SS-AID",
+        "method": "chi2",
+        "chi2": 22.164502164502164,
+        "p": 2.5025838916868714e-06,
+        "sig": "True"
+      },
+      {
+        "test": "Spoofing OAuth intra vs cross",
+        "method": "Fisher",
+        "p": 2.7622184046258307e-33,
+        "sig": "True"
+      },
+      {
+        "test": "Revoked SS-AID intra vs cross",
+        "method": "chi2",
+        "chi2": 1.473967582949061,
+        "p": 0.22472074033121195,
+        "sig": "False"
+      }
+    ]
+  },
+  "timestamp": "2026-04-12T11:16:43Z"
+}
