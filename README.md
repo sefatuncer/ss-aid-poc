@@ -2,9 +2,13 @@
 
 Reference implementation and experimental harness for the paper:
 
-> **Boundary Conditions for Decentralized Identity in Autonomous Agent Networks**
+> **Boundary Conditions: When AI Agents Need Decentralized Identity**
+> IEEE Security & Privacy (Magazine), manuscript SP-2026-06-0276
 
-This package generates the empirical data underlying Table II (per-operation latency), Fig. 3 (Tier 1 vs. Tier 2), Fig. 4 (scalability), and the attack-rate claims (10.5% OAuth spoofing, approximately 5–6% revocation acceptance window, 95.4% chain integrity at depth 5) reported in the paper.
+This package produces the data behind the per-operation latency table, the
+communication-cost figures, the scaling sweep and the attack rates reported in
+the article. The mapping below names the script and the result file for each
+claim and says what kind of evidence it is.
 
 License: MIT (see `LICENSE`).
 
@@ -36,16 +40,16 @@ pip install -r requirements.txt
 python run_all.py
 ```
 
-Outputs Table II latency numbers (Ed25519, OAuth 2.1, SS-AID) and basic attack rates to `results/full_results.json`.
+Outputs the per-operation latency numbers (Ed25519, OAuth 2.1, SS-AID) and the illustrative attack rates to `results/full_results.json`.
 
 ### Full suite (~15 minutes)
 
 ```bash
-python run_all.py                 # Table II latency
+python run_all.py                 # per-operation latency (hardware dependent)
 python attacks_crossorg.py        # 10.5% OAuth spoofing, 5–6% revocation
 python attacks_extended.py        # depth-5 chain integrity, depth-10 deviation
-python scalability.py             # Fig. 4 scaling (2–64 agents)
-python bbs_benchmark_real.py      # Fig. 3 Tier 1 vs Tier 2 (BLS12-381 via blspy)
+python scalability.py             # scaling sweep (2-64 agents)
+python bbs_benchmark_real.py      # Tier-1 proxy timings (BLS12-381 via blspy)
 python generate_figures.py        # Render figures to ../paper/figures/
 ```
 
@@ -180,8 +184,8 @@ poc/
     └── heterogeneous_network_results.json
 ```
 
-The Tamarin theory in `formal/` mechanizes the monotonicity and revocation-soundness lemmas referenced in the Results section. The network emulator in `network_sim/` produces the cross-cloud crossover data discussed in the Discussion (3 regions, 2 providers, 15-cell parameter sweep with 800 samples per cell).
+The Tamarin theory in `formal/` states the monotonicity and revocation-soundness lemmas as a specification. **It has not been machine-checked, and the article makes no claim that it has.** Read `formal/README.md` before running the prover: the model has no adversary channel and `Verify_Action` checks no signature, so closing the lemmas would show internal consistency of the rule system rather than security against an active adversary. The synthetic model in `network_sim/` produces the multi-region comparison discussed in the article (3 regions, 2 providers, 800 samples per cell); no packets cross a real network there.
 
 ## Citing This Code
 
-Please cite the paper when using this code. A specific code-archive DOI (Zenodo or IEEE DataPort) will be assigned upon acceptance and added here.
+Please cite both the article and this archive. `CITATION.cff` carries the metadata. The Zenodo DOI is added here once the first release is archived.
