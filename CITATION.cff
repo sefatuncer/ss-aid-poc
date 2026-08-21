@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+title: >-
+  SS-AID proof-of-concept: reference implementation, attack models and results
+message: >-
+  If you use this software, please cite both the software and the
+  accompanying article.
+type: software
+authors:
+  - given-names: Sefa
+    family-names: Tunçer
+    orcid: "https://orcid.org/0000-0001-6672-3605"
+    affiliation: Independent Researcher, Ankara, Türkiye
+  - given-names: Enis
+    family-names: Karaarslan
+    affiliation: Muğla Sıtkı Koçman University, Muğla, Türkiye
+    email: enis.karaarslan@mu.edu.tr
+license: MIT
+keywords:
+  - self-sovereign identity
+  - decentralized identifiers
+  - verifiable credentials
+  - AI agents
+  - zero-knowledge proofs
+  - credential revocation
+abstract: >-
+  Reference implementation, attack models and result files for the article
+  "Boundary Conditions: When AI Agents Need Decentralized Identity". The
+  package contains the SS-AID prototype (DID and verifiable credential
+  issuance, a policy enforcement point, dynamic capability tokens and a
+  revocation registry), an OAuth 2.1 baseline, the attack and scaling
+  models, a Tamarin specification of the delegation rules, and every result
+  file behind a number in the article. The README labels each number as a
+  measurement, a model output or a derived value.
+preferred-citation:
+  type: article
+  title: "Boundary Conditions: When AI Agents Need Decentralized Identity"
+  authors:
+    - given-names: Sefa
+      family-names: Tunçer
+    - given-names: Enis
+      family-names: Karaarslan
+  journal: IEEE Security & Privacy
+  year: 2026
