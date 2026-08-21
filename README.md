@@ -188,4 +188,11 @@ The Tamarin theory in `formal/` states the monotonicity and revocation-soundness
 
 ## Citing This Code
 
-Please cite both the article and this archive. `CITATION.cff` carries the metadata. The Zenodo DOI is added here once the first release is archived.
+Please cite both the article and this archive.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22045011.svg)](https://doi.org/10.5281/zenodo.22045011)
+
+- **This version (v1.0.0), the state behind the numbers in the article:** [10.5281/zenodo.22045011](https://doi.org/10.5281/zenodo.22045011)
+- **All versions:** [10.5281/zenodo.22045010](https://doi.org/10.5281/zenodo.22045010)
+
+`CITATION.cff` carries the full metadata.
